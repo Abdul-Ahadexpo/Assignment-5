@@ -1,0 +1,149 @@
+.nav-bar {
+  border: 1px solid transparent;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.df-balance {
+  /* border: 1px solid red; */
+
+  width: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* .coin-icon {
+  position: relative;
+  left: -50px;
+  top: -28px;
+} */
+
+#accountBalance {
+  font-size: 1.5rem;
+}
+
+.blog-btn {
+  margin-left: 0px;
+
+  color: rgb(0, 0, 0);
+
+  height: 48px;
+  width: 109px;
+
+  padding: 12px 32px 12px 32px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  background: rgb(180, 244, 97);
+}
+
+/*---------------------- Donation and history buttons */
+.d-h-btn {
+  margin-top: 100px;
+  margin-left: 45%;
+}
+
+.d-btn {
+  border: 2px solid gray;
+  margin-left: -10px;
+  font-weight: 600;
+  border-radius: 8px;
+  height: 48px;
+  align-items: center;
+  padding: 12px 32px 12px 32px;
+}
+
+.h-btn {
+  margin-left: 10px;
+  border: 2px solid gray;
+  font-weight: 600;
+  border-radius: 8px;
+  width: 80px;
+}
+.h-btn:focus {
+  background-color: #b4f461;
+  color: rgb(0, 0, 0);
+  border: 2px solid #b4f461;
+}
+
+.d-btn:focus {
+  background-color: #b4f461;
+  color: rgb(0, 0, 0);
+  border: 2px solid #b4f461;
+}
+
+.h-btn:hover {
+  scale: 102%;
+}
+.d-btn:hover {
+  scale: 102%;
+}
+
+/* --------------------Card Donate */
+.cards {
+  margin-top: 34px;
+}
+#donate-now {
+  background-color: #b4f461;
+  color: black;
+  font-weight: 700;
+}
+#card-1 {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.st-mony {
+  background-color: rgba(43, 43, 43, 0.05);
+  justify-content: center;
+  width: 210px;
+  height: auto;
+  border-radius: 8px;
+  color: rgba(17, 17, 17, 0.7);
+}
+@media screen and (max-width: 400px) {
+  #donate-today {
+    border: 1px solid transparent;
+    scale: 70%;
+    position: relative;
+    left: -40px;
+  }
+  #df-balance {
+    border: 1px solid transparent;
+    scale: 70%;
+    position: relative;
+    left: -70px;
+  }
+  .d-h-btn {
+    scale: 80%;
+    margin-top: 40px;
+    position: relative;
+    left: -110px;
+  }
+
+  .blog-btn {
+    height: 40px;
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: auto;
+    justify-content: center;
+    background: #b4f461;
+  }
+}
+
+/* Extra effects */
+.hidden {
+  display: none;
+}
+.card {
+  margin-bottom: 1rem; /* Space between cards */
+}
