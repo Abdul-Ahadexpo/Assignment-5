@@ -12,16 +12,19 @@
 </head>
 
 <body>
-  <!-- NavBar -->
+
+
+  <!-- ----------------------------NavBar -->
   <section>
-    <div class="navbar bg-base-100 nav-bar">
+    <div class=" backdrop-blur-md navbar bg-base-0 nav-bar">
+
 
       <a href="./blog.html" class="blog-btn">Blog</a>
 
 
 
       <div class="navbar-center">
-        <a class="btn btn-ghost text-xl"><img src="./logo.png" alt="">
+        <a onclick="href='#donationBtn'" class="btn btn-ghost text-xl" id="donate-today"><img src="./logo.png" alt="">
           <h1 class="text-2xl">Donate today</h1>
         </a>
       </div>
@@ -29,23 +32,140 @@
 
 
 
-      <div class="flex items-center df-balance">
-        <span id="accountBalance">1000</span> <img src="./coin.png" alt="" srcset="" class="coin-icon">
+      <div class="flex items-center df-balance" id="df-balance">
+        <span id="accountBalance">1000 BDT</span> <img src="./coin.png" alt="" srcset="" class="coin-icon">
       </div>
     </div>
 
 
 
 
-    <div class="flex space-x-4 d-h-btn">
-      <button id="donationBtn" class="btn bg-lime-400" class="d-btn">Donation</button>
+    <div class="flex d-h-btn">
 
-      <button id="historyBtn" class="btn btn-outline" class="h-btn">History</button>
+      <button id="donationBtn" class="d-btn">Donate</button>
+
+      <button id="historyBtn" class="h-btn">History</button>
+
     </div>
   </section>
 
 
+  <!-- ------------------------Main -->
+  <main>
+    <div class="cards">
+
+      <!-- --------------------------Card 1 -->
+      <div id="card-1" class="card card-side bg-base-200 shadow-xl w-[900px]">
+        <figure>
+          <img src="./noakhali.png" alt="Movie" />
+        </figure>
+
+        <div class="card-body">
+          <!-- How much money has been donated -->
+          <span id="st-money1" class="st-mony flex flex-row">
+            <img src="./coin.png" alt="Money icon">
+            <h1 class="text-2xl">1742 BDT</h1>
+          </span>
+
+          <h2 class="card-title">Donate for Flood at Noakhali, Bangladeshs</h2>
+
+          <p>The recent floods in Noakhali have caused <br>significant damage to homes infrastructure. <br>Your donation
+            will
+            help others.</p>
+          <!-- Text input -->
+          <div class="card-actions justify-end flex flex-col">
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+
+
+            <button id="donate-now" class="btn btn-wide">Donate Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------- Card 2 -->
+
+
+
+      <div id="card-1" class="card card-side bg-base-200 shadow-xl w-[900px]">
+        <figure>
+          <img src="./feni.png" alt="Movie" />
+        </figure>
+
+        <div class="card-body">
+          <!-- How much money has been donated -->
+          <span id="st-money2" class="st-mony flex flex-row">
+            <img src="./coin.png" alt="Money icon">
+            <h1 class="text-2xl">1900 BDT</h1>
+          </span>
+
+          <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+
+          <p>The recent floods in Feni have devastated local<br> communities, leading to severe disruption <br>and loss.
+            Your
+            generous donation will help others.</p>
+          <!-- Text input -->
+          <div class="card-actions justify-end flex flex-col">
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+
+
+            <button id="donate-now" class="btn btn-wide">Donate Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------card 3 -->
+
+
+      <div id="card-1" class="card card-side bg-base-200 shadow-xl w-[900px]">
+        <figure>
+          <img src="./quota-protest.png" alt="Movie" />
+        </figure>
+
+        <div class="card-body">
+          <!-- How much money has been donated -->
+          <span id="st-money3" class="st-mony flex flex-row">
+            <img src="./coin.png" alt="Money icon">
+            <h1 class="text-2xl">1000 BDT</h1>
+          </span>
+
+          <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+
+          <p>The recent Quota movement has resulted<br> in numerous injuries and significant hardship <br>for many
+            individuals.
+            Your support will help others.</p>
+          <!-- Text input -->
+          <div class="card-actions justify-end flex flex-col">
+            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+
+
+            <button id="donate-now" class="btn btn-wide">Donate Now</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <!-- History section -->
+
+  <section id="historySection" class="hidden">
+    <h2 class="text-xl">Your Donation History</h2>
+    <ul id="historyList" class="space-y-4"></ul>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="donationModal" class="modal">
+    <div class="modal-box">
+      <h3 id="modalTitle" class="font-bold text-lg"></h3>
+      <p id="modalMessage" class="py-4"></p>
+      <div class="modal-action">
+        <a href="#" id="closeModal" class="btn">Close</a>
+      </div>
+    </div>
+  </div>
+
 
 </body>
+<script src="script.js"></script>
 
 </html>
