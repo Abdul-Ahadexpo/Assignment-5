@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-view</title>
+  <script src="https://kit.fontawesome.com/5fc4420cfa.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class=" backdrop-blur-md navbar bg-base-0 nav-bar">
+
+
+      <a href="./blog.html" class="blog-btn">Blog</a>
+
+
+
+      <div class="navbar-center">
+        <a href="./index.html" class="btn btn-ghost text-xl" id="donate-today"><img src="./logo.png" alt="">
+          <h1 class="text-2xl">Donate today</h1>
+        </a>
+      </div>
+
+
+
+
+      <div class="flex items-center df-balance" id="df-balance">
+        <span id="accountBalance">1000 BDT</span> <img src="./coin.png" alt="" srcset="" class="coin-icon">
+      </div>
+    </div>
+
+
+
+
+    <div class="flex d-h-btn">
+
+      <button id="donationBtn" class="d-btn">Donate</button>
+
+      <button id="historyBtn" href="./index.html" class="h-btn">History</button>
+
+
+    </div>
+  </nav>
+  <!-- Nav bar end -->
+  <main class="mt-20">
+    <h1 class="text-5xl">Importent FAQ <i class="fa-regular fa-circle-question"></i></h1>
+    <div class="mt-8 mb-4 collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>The DOM is basically a way to represent a webpage's structure as a tree of elements. It lets JavaScript
+          interact with the HTML, so you can change things like text, styles, or even add new elements.</p>
+      </div>
+    </div>
+
+
+    <div class="mb-4 collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>You can select an element from the DOM using methods like document.getElementById, document.querySelector, or
+          document.getElementsByClassName. These let you grab specific elements based on their ID, class, or tag and do
+          stuff with them like changing text or styles.</p>
+      </div>
+    </div>
+
+
+
+    <div class="mb-4 collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation is when you attach an event listener to a parent element instead of individual child
+          elements. It works by taking advantage of event bubbling, where events fired on child elements propagate up to
+          their parent. It's useful because it reduces the number of event listeners needed, making your code more
+          efficient, and works for dynamically added elements.</p>
+      </div>
+    </div>
+
+
+
+
+    <div class=" collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>You can change an element's attributes using setAttribute() or get them with getAttribute(). For example, you
+          could set an image's src attribute. To modify styles, you can directly change the style property, like
+          element.style.backgroundColor = "blue";, or manage CSS classes with classList.add() or classList.remove().
+          This lets you update how elements look or act on a webpage.</p>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
